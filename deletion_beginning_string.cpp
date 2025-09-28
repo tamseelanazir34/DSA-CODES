@@ -5,7 +5,7 @@ int main() {
     char str[200];
     int n;
 
-    // Input the original string
+    // the original string
     printf("Enter the original string: ");
     fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = 0; 
@@ -16,7 +16,7 @@ int main() {
 
     int len = strlen(str);
 
-    // Validate input
+   
     if (n < 0 || n > len) {
         printf("Invalid number of characters to delete.\n");
         return 1;
